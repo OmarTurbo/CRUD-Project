@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-Project</title>
+    <!-- Link BootStrap Style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="w-75 mx-auto my-5">
+        <div class="form-group">
+            <label for="productName">productName:</label>
+            <input type="text" class="form-control my-3" id="productName">
+            <div class="alert alert-danger" style="display: none;" role="alert">
+                Please Enter the First letter in capital and it will be between 2 and 8 letters
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="productPrice">productPrice:</label>
+            <input type="number" min="0" class="form-control my-3" id="productPrice">
+        </div>
+        <div class="form-group">
+            <label for="productType">productType:</label>
+            <input type="text" class="form-control my-3" id="productType">
+        </div>
+        <div class="form-group">
+            <label for="productDesc">productDesc:</label>
+            <textarea style="resize: none;" type="text" class="form-control my-3" id="productDesc"></textarea>
+        </div>
+        <button class="btn btn-outline-primary" id="add">Add Product</button>
+        <button style="display: none;" class="btn btn-outline-warning" id="update">Update Product</button>
+
+        <div class="form-group">
+            <input type="text" onkeyup="search(this.value)" placeholder="search..." class="form-control p-2 my-5">
+        </div>
+    </div>
+
+    <div class="w-75 mx-auto my-5">
+
+        <table class="table">
+            <thead>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Desc</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- Link Bootstrap JavaScript -->
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
+    <!-- Link Main JavaScript -->
+    <script src="JavaScript/index.js"></script>
+</body>
+
+</html>
