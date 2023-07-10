@@ -32,7 +32,7 @@ addBtn.addEventListener('click', () => {
         displayData();
     }else{
         alert.style.display = "block";
-        setTimeout(()=>{alert.style.display='none'},1000);
+        setTimeout(()=>{alert.style.display='none'},2000);
     }
 })
 
